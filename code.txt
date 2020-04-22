@@ -1,0 +1,9 @@
+letters = [chr(i) for i in range(97, 123)]
+meaning = ["adventurous", "brilliant", "clever", "different", "excellent", "fabulous", "giving", "hilarious", "innocent", "joker", "king", "lol", "miracle", "nice", "omnipotent", "practical", "queen", "right", "sexy", "turtle", "ultra", "victory", "wrong", "xerox", "yuk", "zeal" ]
+for i in range(2):
+    name = input("Enter your name please\n").lower()
+    res = dict(zip(letters, meaning))
+    print("Meaning of each letter in ", name)
+    for j in name:
+        print(j, "-> ", res[j])
+
